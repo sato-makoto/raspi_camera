@@ -6,7 +6,7 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-raspivid -n -w 800 -h 600 -b 4500000 -fps 30 -vf -hf -t 0 -o - | \
+raspivid -n -w 800 -h 600 -rot 180 -b 4500000 -fps 30 -vf -hf -t 0 -o - | \
      gst-launch-1.0 -v fdsrc \
      !  h264parse \
      ! rtph264pay config-interval=10 pt=96  \
