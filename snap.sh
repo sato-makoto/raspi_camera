@@ -51,5 +51,5 @@ fi
 raspivid -t 0 -h $PICT_H -w $PICT_W &
 
 fbi -a -t 3 -1 -T 1 -d /dev/fb0  ${SAVE}/${FILENAME}
-# display  ${SAVE}/${FILENAME}
+#display  ${SAVE}/${FILENAME}
 
