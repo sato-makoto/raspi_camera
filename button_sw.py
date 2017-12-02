@@ -27,9 +27,8 @@ seq_end = '\033[00m'
 # Model A,B,etc.
 #ports = [28, 29, 30, 31]
 
-# https://elinux.org/RPi_Low-level_peripherals#Model_A.2B.2C_B.2B_and_B2
 # Model A+, etc
-ports = [5,6,12,13]
+ports = [21,22,23,26]
 for port in ports:
   GPIO.setup(port, GPIO.IN)
 
