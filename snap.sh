@@ -51,5 +51,10 @@ fi
 fbi -a -T 1 -d /dev/fb0  ${SAVE}/${FILENAME}
 raspivid -t 0 -h $PICT_H -w $PICT_W &
 
+<<<<<<< HEAD
 # display  ${SAVE}/${FILENAME}
+=======
+LANG=C sudo fbi -a -t 3 -1 -T 1 -d /dev/fb0  ${SAVE}/${FILENAME}
+#display  ${SAVE}/${FILENAME}
+>>>>>>> 194be3bf5552af33cbcaa50b633d66569abe71d8
 

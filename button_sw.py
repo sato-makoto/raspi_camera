@@ -24,7 +24,11 @@ esc = [31, 37, 33, 30]
 seq_begin = '\033[1;'
 seq_end = '\033[00m'
 
-ports = [28, 29, 30, 31]
+# Model A,B,etc.
+#ports = [28, 29, 30, 31]
+
+# Model A+, etc
+ports = [21,22,23,26]
 for port in ports:
   GPIO.setup(port, GPIO.IN)
 
